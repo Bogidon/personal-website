@@ -1,0 +1,37 @@
+<header>
+
+  {% if page.layout != "post" %}
+  <div class="title">
+    <img src="/assets/images/bogdan.jpg" class="photowell">
+    <span>Bogdan Vitoc</span>
+  </div>
+  {% endif %}
+
+  <nav class="main-nav">
+      <a class="yellow {%if page.url contains 'blog'%}selected{%endif%}" href="/blog">blog</a>
+      <a class="pink {%if page.url contains 'projects'%}selected{%endif%}" href="/projects">projects</a>
+      <a class="green {%if page.url contains 'contact'%}selected{%endif%}" href="/contact">contact</a>
+  </nav>
+
+  
+  <div class="page-header">
+    <span class="page-title">{{page.title}}</span>
+    <p class="page-subtitle">{{page.subtitle | default: page.date | date: "%a. %m/%e/%Y" }}</p>
+    {% if page.url contains '/blog/' %}
+    <nav class="sub-nav">
+          <a class="{%if page.url contains 'english'%}selected{%endif%}" href="/blog/english">English</a>
+          <a class="{%if page.url contains 'română'%}selected{%endif%}" href="/blog/română">Română</a>
+          <a class="{%if page.url contains 'deutsch'%}selected{%endif%}" href="/blog/deutsch">Deutsch</a>
+          <a class="{%if page.url == '/blog/'%}selected{%endif%}" href="/blog">all</a>
+    </nav>
+    {% endif %}
+    {% if page.url contains '/projects/' %}
+    <nav class="sub-nav">
+          <a class="{%if page.url contains 'tech'%}selected{%endif%}" href="/projects/tech">tech</a>
+          <a class="{%if page.url contains 'design'%}selected{%endif%}" href="/projects/design">design</a>
+          <a class="{%if page.url == '/projects/'%}selected{%endif%}" href="/projects">all</a>
+    </nav>
+    {% endif %}
+  </div>
+
+</header>

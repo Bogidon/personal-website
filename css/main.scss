@@ -1,0 +1,263 @@
+---
+# main.scss
+---
+
+$blue: #009bdf;
+$metallic_silver: #a7a9ac;
+$gray: #a7a9ac;
+$yellow: #ffc20e;
+$green: #349e49;
+$pink: #c77eb5;
+$peach: #faf7f4; 
+$link: #2365C8;
+
+$squished: "only screen and (max-width : 644px)";
+
+@font-face {
+    font-family: 'FF Din';
+    src: url('{{ "/assets/fonts/ff_din.woff" | relative_url }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font: 17px "Times New Roman", serif;
+	line-height: 25px;
+	background-color: #999;
+	display: unset !important;
+
+	@media #{$squished} {
+		margin: 0;
+		background-color: white;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $link;
+}
+
+#page {
+	max-width: 644px;
+	margin: 0px auto;
+	padding: 30px 20px;
+	background-color: white;
+	border: 6px solid #ddd;
+
+	@media #{$squished} {
+		padding: 10px;
+		border: none;		
+	}
+}
+
+header {
+	font-family: 'FF Din', sans-serif;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 0fr 1fr;
+	margin-bottom: 20px;
+
+	* {
+		line-height: normal;
+	}
+}
+
+main {
+	padding: 0 15px;
+}
+
+.title {
+	font-size: 24px;
+	color: #777;
+	text-align: center;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+	place-self: start end;
+	max-width: 130px;
+	white-space: nowrap;
+	margin-left: 20px;
+
+	@media #{$squished} {
+		font-size: 17px;
+		white-space: normal;
+	}
+
+	img {
+		max-width: 100px;
+		margin: auto;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+
+		// @media #{$squished} {
+		// 	width: 60px;
+		// }
+	}
+}
+
+.photowell {
+	padding: 6px;
+	box-shadow: 0px 0px 5px #888;
+}
+
+.page-title {
+	font-size: 30px;
+}
+
+.main-nav, .page-header {
+	text-align: left;
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-end: span 1;
+
+	a.selected {
+		color: black;
+	}
+}
+
+.main-nav {
+	grid-row-start: 1;
+	place-self: stretch stretch;
+	display: flex;
+	width: 100%;
+	margin: 0 -5px;
+	margin-bottom: 20px;
+	justify-content: start;
+
+	@media #{$squished} {
+		margin-bottom: 8px;
+	}
+
+	a {
+		color: black;
+		font-weight: 500;
+		text-align: center;
+		margin: 0 5px;
+
+		&::after {		
+			content: "";
+			display: block;
+			height: 6px;
+			margin: auto;
+			opacity: 0.75;
+			position: relative;
+			transition: transform 0.1s ease-out;
+			width: 80px;
+
+			@media #{$squished} {
+				width: 100%;
+			}
+		}
+
+		&.yellow::after {
+			background-color: $yellow;
+		}
+
+		&.green::after {
+			background-color: $green;
+		}
+
+		&.pink::after {
+			background-color: $pink;
+		}
+
+		&:hover::after {
+			transform: scaleY(1.25);
+			transform-origin: bottom;
+		}
+	}
+}
+
+.sub-nav {
+	white-space: nowrap;
+}
+
+.sub-nav a:not(:last-child):after {
+	color: black;
+	content: "  •";
+}
+
+.page-header {
+	grid-row-start: 2;
+	place-self: start stretch;
+
+	p {
+		margin: 4px 0 0 0;
+	}
+
+	nav {
+		margin-top: 8px;
+	}
+}
+
+.post:hover {
+	.post-title {
+		text-decoration: underline;
+	}
+}
+
+.post-title {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.post-more {
+	text-decoration: none;
+}
+
+#projects {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+
+
+	.project {
+		display: block;
+		margin-bottom: 60px;
+
+		&:hover {
+			.project-title {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.project-more {
+		color: $link;
+	}
+
+	.project-date {
+		color: black;
+		margin-left: 6px;
+	}
+
+	.project-title {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.project-head {
+		margin-bottom: 4px;
+	}
+
+	img {
+		float: left;
+		display: inline;
+		width: 40%;
+		height: 300px;
+		margin-right: 17px;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	p { 
+		display: inline;
+		margin-bottom: 0;
+		color: black;
+	}
+}

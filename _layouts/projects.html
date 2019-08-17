@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% if page.category %}
+	{% assign projects = site.data.projects | where:"category",page.category %}
+{% else %}
+	{% assign projects = site.data.projects %}
+{% endif %}
+
+<div id="projects">
+	{% for project in projects %}
+		<a class="project" href="{{project.url}}">
+			<img src="{{project.image}}" class="photowell">
+			<div class="project-head">
+				<span class="project-title">{{project.name}}</span>
+				<span class="project-date">{{project.date}}</span>
+			</div>
+			<p>
+				{{project.description}}
+				<span class="project-more" href="{{project.url}}">{{project.more}}</span>
+			</p>
+		</a>
+	{% endfor %}
+</div>

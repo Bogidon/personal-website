@@ -1,0 +1,55 @@
+- name: coffee block
+  description: As part of our Products and Markets class I worked together with four other Olin College students to create an open source model for community-oriented coffee stands. Our model is a collection of brewing techniques, furniture plans, playlists and more that make it easy for any group, from individuals to city governments, to put together a popup coffee stand in a public space, serving free coffee to enrich their communities.
+  url: https://docs.google.com/presentation/d/e/2PACX-1vTHJ3oVyzAyIhwQBxeGJycgTQQTVqx1yvIjLqoQ6kmCp25rdK1CFX6RYIVlCBu_TT0rLhvc6ftnafK-/pub?start=false&loop=false&delayms=3000
+  image: /assets/images/projects/coffeeblock.jpg
+  date: (2018)
+  more: see slides...
+  category: design
+
+- name: Teespring shopping app
+  description: "Brought Teespring.com shopping to native iOS. We (mostly me for 50% then with another developer for the rest) built the app in Swift and developed a pretty nice integration and deployment pipeline among other cool things. Sadly I didn't make time to write about any of them then... The app doesn't work anymore (though it's still on the App Store)"
+  url: https://vimeo.com/314360400
+  image: /assets/images/projects/teespring-shopping.jpg
+  date: (2016-2017)
+  more: watch demo...
+  category: tech
+
+- name: Teespring seller dashboard app
+  description: Teespring is a marketplace for buying and designing+selling shirts. This app gave sellers the ability to see their stats, get notified of sales, edit marketplace info, and send emails from their phones. We (team of three devs, one designer) first wrote the app in Swift and later rewrote it for iOS and Android with React Native. Since the demo contains some private information please ask me for a password to view it.
+  url: https://vimeo.com/314360496
+  image: /assets/images/projects/teespring-seller.jpg
+  date: (2016-2017)
+  more: watch demo (ask me for password)...
+  category: tech
+
+- name: CHE Hacks
+  description: I organized a 150 person high school hackathon at the Cherry Hill Public Library in Fall 2015.
+  url: https://www.courierpostonline.com/story/news/local/south-jersey/2015/11/05/cherry-hill-hackathon-opens-door-programming/75148504/
+  image: /assets/images/projects/chehacks.jpg
+  date: (2014-2016)
+  more: see photos...
+  category: design
+
+- name: Unleash.me
+  description: Built an iOS and Apple Watch app in Swift to monitor users’ emotional “pulse.” Used Firebase for the backend. Just me and a designer. 
+  url: https://apps.apple.com/us/app/unleashme/id1114452610?mt=8
+  image: /assets/images/projects/unleashme.png
+  date: (2015-2016)
+  more: see on app store...
+  category: tech
+
+- name: SAS campus app
+  description: Spent the summer on a team of three building an internal app using Xamarin.Forms for Android and iOS and ASP.NET for the backend.
+  url: https://vimeo.com/314360620
+  image: /assets/images/projects/sas.jpg
+  date: (2015)
+  more: watch demo...
+  category: tech
+
+- name: Transylvania Developments app
+  description: My first software project for pay. I developed an app and CMS platform in Objective-C, JQuery, and Parse to create a contractor bidding marketplace for projects of the Romanian real estate development firm Transylvania Developments.
+  url: https://www.dropbox.com/sh/nxd8ujdxifotbh3/AACjk5gS7YAfhpjk0qnXruXMa?dl=0
+  image: /assets/images/projects/td.jpg
+  date: (2014)
+  more: see screenshots...
+  category: tech

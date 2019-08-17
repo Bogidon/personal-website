@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Blog!"
+date:   2019-01-26
+categories: [english]
+---
+
+Just coded the site! I'll be back with some writing in the near future. I hope. I do have some projects up though. So don't trust that link at the end. There's no more... to this one! :)
